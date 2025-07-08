@@ -24,12 +24,31 @@
     }
   },
   "auth": {
-    "hydronode68beade5": {
+    "hydronode6372a89c": {
       "customAuth": false,
       "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
       "providerPlugin": "awscloudformation",
-      "service": "Cognito",
-      "serviceType": "imported"
+      "service": "Cognito"
     }
   },
   "function": {
@@ -42,96 +61,6 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
-    }
-  },
-  "parameters": {
-    "AMPLIFY_auth_hydronode68beade5_allowUnauthenticatedIdentities": {
-      "usedBy": [
-        {
-          "category": "auth",
-          "resourceName": "hydronode68beade5"
-        }
-      ]
-    },
-    "AMPLIFY_auth_hydronode68beade5_authRoleArn": {
-      "usedBy": [
-        {
-          "category": "auth",
-          "resourceName": "hydronode68beade5"
-        }
-      ]
-    },
-    "AMPLIFY_auth_hydronode68beade5_authRoleName": {
-      "usedBy": [
-        {
-          "category": "auth",
-          "resourceName": "hydronode68beade5"
-        }
-      ]
-    },
-    "AMPLIFY_auth_hydronode68beade5_identityPoolId": {
-      "usedBy": [
-        {
-          "category": "auth",
-          "resourceName": "hydronode68beade5"
-        }
-      ]
-    },
-    "AMPLIFY_auth_hydronode68beade5_identityPoolName": {
-      "usedBy": [
-        {
-          "category": "auth",
-          "resourceName": "hydronode68beade5"
-        }
-      ]
-    },
-    "AMPLIFY_auth_hydronode68beade5_nativeClientId": {
-      "usedBy": [
-        {
-          "category": "auth",
-          "resourceName": "hydronode68beade5"
-        }
-      ]
-    },
-    "AMPLIFY_auth_hydronode68beade5_unauthRoleArn": {
-      "usedBy": [
-        {
-          "category": "auth",
-          "resourceName": "hydronode68beade5"
-        }
-      ]
-    },
-    "AMPLIFY_auth_hydronode68beade5_unauthRoleName": {
-      "usedBy": [
-        {
-          "category": "auth",
-          "resourceName": "hydronode68beade5"
-        }
-      ]
-    },
-    "AMPLIFY_auth_hydronode68beade5_userPoolId": {
-      "usedBy": [
-        {
-          "category": "auth",
-          "resourceName": "hydronode68beade5"
-        }
-      ]
-    },
-    "AMPLIFY_auth_hydronode68beade5_userPoolName": {
-      "usedBy": [
-        {
-          "category": "auth",
-          "resourceName": "hydronode68beade5"
-        }
-      ]
-    },
-    "AMPLIFY_auth_hydronode68beade5_webClientId": {
-      "usedBy": [
-        {
-          "category": "auth",
-          "resourceName": "hydronode68beade5"
-        }
-      ]
     }
   }
 }

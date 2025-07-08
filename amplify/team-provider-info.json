@@ -13,24 +13,12 @@
       "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-hydronode-dev-46485-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
-      "auth": {
-        "hydronode68beade5": {
-          "userPoolId": "eu-central-1_4WflHc8Ea",
-          "userPoolName": "amplifyiotvue37aa4154a_userpool_7aa4154a-dev",
-          "webClientId": "4mlnoj9nj6707c2mffsej3kojq",
-          "nativeClientId": "3rpo8gle9rhbeeoiuiqspaedkr",
-          "identityPoolId": "eu-central-1:89d21ab6-752c-4d74-96cd-491d5ba50d02",
-          "identityPoolName": "amplifyiotvue37aa4154a_identitypool_7aa4154a__dev",
-          "allowUnauthenticatedIdentities": false,
-          "authRoleArn": "arn:aws:iam::717279707507:role/amplify-amplifyiotvue3-dev-41ff7-authRole",
-          "authRoleName": "amplify-amplifyiotvue3-dev-41ff7-authRole",
-          "unauthRoleArn": "arn:aws:iam::717279707507:role/amplify-amplifyiotvue3-dev-41ff7-unauthRole",
-          "unauthRoleName": "amplify-amplifyiotvue3-dev-41ff7-unauthRole"
-        }
-      },
       "function": {
         "hydronodeAdminUserManager": {},
         "hydronodeSendCommandFunction": {}
+      },
+      "auth": {
+        "hydronode6372a89c": {}
       }
     }
   }
