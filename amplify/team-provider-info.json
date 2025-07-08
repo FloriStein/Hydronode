@@ -9,7 +9,8 @@
       "UnauthRoleName": "amplify-hydronode-dev-46485-unauthRole",
       "StackName": "amplify-hydronode-dev-46485",
       "StackId": "arn:aws:cloudformation:eu-central-1:717279707507:stack/amplify-hydronode-dev-46485/85f69e70-5bd1-11f0-98ab-067c7afd25c9",
-      "AmplifyAppId": "d2ci7b02jrkfrl"
+      "AmplifyAppId": "d2ci7b02jrkfrl",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-hydronode-dev-46485-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "auth": {

@@ -1,4 +1,20 @@
 {
+  "api": {
+    "hydronodeApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "hydronodeAdminUserManager"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "hydronode68beade5": {
       "customAuth": false,
