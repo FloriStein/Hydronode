@@ -259,7 +259,7 @@ export default {
         return result;
     },
     
-    async sendCommand(id : string, key : string, payload : any) {
+    async sendCommand(key : string, payload : any) {
         const session = await fetchAuthSession();
         const idToken = session.tokens?.idToken?.toString();
 

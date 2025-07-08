@@ -347,7 +347,7 @@ export const useStore = defineStore('auth', () => {
 
   async function sendCommand(id: string, key: string, payload: any) {
     try {
-      await api.sendCommand(id, key, payload);
+      await api.sendCommand(key, payload);
       if(!commandHistory.value[id])
         commandHistory.value[id] = [];
       commandHistory.value[id].push({timestamp: Date.now(), direction: "OUTBOUND", command: "QUEUE", message: {key: key, payload: payload}});

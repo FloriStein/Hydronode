@@ -47,7 +47,7 @@ const router = createRouter({
 });
 
 
-router.beforeResolve(async (to, from, next) => {
+router.beforeResolve(async (to, _from, next) => {
   const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
 
   if (!requiresAuth) {
