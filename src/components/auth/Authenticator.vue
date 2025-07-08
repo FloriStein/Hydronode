@@ -1,6 +1,5 @@
 <script setup lang="ts">
     import { Authenticator } from '@aws-amplify/ui-vue';
-    import '@aws-amplify/ui-vue/styles.css';
     import { useRouter, useRoute } from 'vue-router';
     const router = useRouter();
     const route = useRoute();
