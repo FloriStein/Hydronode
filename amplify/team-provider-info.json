@@ -29,7 +29,8 @@
         }
       },
       "function": {
-        "hydronodeAdminUserManager": {}
+        "hydronodeAdminUserManager": {},
+        "hydronodeSendCommandFunction": {}
       }
     }
   }

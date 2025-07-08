@@ -9,6 +9,14 @@
           ],
           "category": "function",
           "resourceName": "hydronodeAdminUserManager"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "hydronodeSendCommandFunction"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -26,6 +34,11 @@
   },
   "function": {
     "hydronodeAdminUserManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "hydronodeSendCommandFunction": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
