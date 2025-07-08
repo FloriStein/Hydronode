@@ -77,7 +77,7 @@ export function override(resources: AmplifyApiRestResourceStackTemplate) {
     }
 
     // 5. Relevante Pfade mit CORS-Handler ausstatten
-    const corsPaths = ['/admin/users']
+    const corsPaths = ['/admin/users', '/user/subscription', '/data']
     corsPaths.forEach((p) => {
         if (paths[p]) {
             paths[p].options = corsHandler
