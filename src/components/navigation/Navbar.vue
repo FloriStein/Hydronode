@@ -1,6 +1,5 @@
 <script setup lang="ts">
     import { signOut } from 'aws-amplify/auth';
-    import { ref } from 'vue';
     import { useRouter } from "vue-router";
     import { useStore } from "../../services/store.ts";
     import NavbarButton from "./NavbarButton.vue"

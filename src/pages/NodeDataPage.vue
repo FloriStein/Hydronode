@@ -38,7 +38,7 @@
 
             store.commandHistory[id].push({timestamp: Date.now(), direction: "INBOUND", command: command.key, message: command.payload});
         });
-        mqttClient.subscribeToTopic(`$aws/things/${id}/shadow/update`, (message) => {
+        mqttClient.subscribeToTopic(`$aws/things/${id}/shadow/update`, () => {
             store.fetchSensorData();
         });
     });

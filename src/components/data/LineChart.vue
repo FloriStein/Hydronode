@@ -1,14 +1,14 @@
 <script setup lang="ts">
     import { Line } from 'vue-chartjs'
     import {
-        Chart as ChartJS,
-        Title,
-        Tooltip,
-        Legend,
-        LineElement,
-        PointElement,
-        CategoryScale,
-        LinearScale
+      Chart as ChartJS,
+      Title,
+      Tooltip,
+      Legend,
+      LineElement,
+      PointElement,
+      CategoryScale,
+      LinearScale, type ChartOptions
     } from 'chart.js'
     import { computed, onMounted, ref } from 'vue';
     import 'chartjs-adapter-date-fns';
@@ -16,10 +16,10 @@
     ChartJS.register(Title, Tooltip, Legend, LineElement, PointElement, CategoryScale, LinearScale)
 
     const props = withDefaults(
-        defineProps<{ 
+        defineProps<{
             data : {timestamp : number, value : number}[],
             metric : string,
-            unit : string, 
+            unit : string,
             title? : string,
             unitShort? : string
         }>(),
@@ -76,59 +76,59 @@
             backgroundColor: primaryHoverColor.value,
             borderColor: primaryColor.value,
             fill: true,
-            tension: 0.3, 
+            tension: 0.3,
             }
         ]
     }));
 
-    const chartOptions = computed(() => ({
-        responsive: true,
-        plugins: {
-            legend: {
-                labels: {
-                    color: textColor.value
-                },
-                display: true
-            },
-            tooltip: { enabled: true },
-            title: {
-                display: true,
-                text: props.title,
-                font: {
-                    size: 18
-                },
-                color: textColor.value
-            }
+    const chartOptions = computed<ChartOptions<'line'>>(() => ({
+      responsive: true,
+      plugins: {
+        legend: {
+          labels: {
+            color: textColor.value
+          },
+          display: true
         },
-        scales: {
-            x: {
-                type: 'time',
-                time: {
-                    unit: 'hour',
-                    displayFormats: {
-                        hour: 'HH:mm dd.MM.yy'
-                    }
-                },
-                title: {
-                    display: true,
-                    text: 'Time',
-                    color: textColor.value
-                },
-                ticks: {
-                    color: textColor.value
-                }
-            },
-            y: {
-                beginAtZero: true,
-                title: {
-                    display: true,
-                    text: props.unitShort
-                },
-                ticks: {
-                    color: textColor.value
-                }
-            }
+        tooltip: { enabled: true },
+        title: {
+          display: true,
+          text: props.title,
+          font: {
+            size: 18
+          },
+          color: textColor.value
         }
+      },
+      scales: {
+        x: {
+          type: 'time',
+          time: {
+            unit: 'hour' as const,
+            displayFormats: {
+              hour: 'HH:mm dd.MM.yy'
+            }
+          },
+          title: {
+            display: true,
+            text: 'Time',
+            color: textColor.value
+          },
+          ticks: {
+            color: textColor.value
+          }
+        },
+        y: {
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: props.unitShort
+          },
+          ticks: {
+            color: textColor.value
+          }
+        }
+      }
     }))
 </script>
 
