@@ -7,12 +7,13 @@ import {
   Legend,
   BarElement,
   LinearScale,
-  TimeScale
+  TimeScale, type ChartOptions
 } from 'chart.js'
 import 'chartjs-adapter-date-fns'
 import { computed } from 'vue'
 
 ChartJS.register(Title, Tooltip, Legend, BarElement, LinearScale, TimeScale)
+ChartJS.defaults.locale = 'de';
 
 const props = withDefaults(
   defineProps<{
@@ -51,22 +52,18 @@ const chartData = computed(() => {
   ]
 }});
 
-const chartOptions = computed(() => ({
+const chartOptions: ChartOptions<'bar'> = {
   responsive: true,
   plugins: {
     legend: {
-      labels: {
-        color: textColor
-      },
+      labels: { color: textColor },
       display: true
     },
     tooltip: { enabled: true },
     title: {
       display: true,
       text: props.title,
-      font: {
-        size: 18
-      },
+      font: { size: 18 },
       color: textColor
     }
   },
@@ -74,29 +71,21 @@ const chartOptions = computed(() => ({
     x: {
       type: 'time',
       time: {
-        unit: props.timeframe.substring(0, props.timeframe.length -1).toLowerCase(),
+        unit: props.timeframe.substring(0, props.timeframe.length -1).toLowerCase() as
+            'millisecond' | 'second' | 'minute' | 'hour' | 'day' | 'week' | 'month' | 'quarter' | 'year',
         tooltipFormat: 'dd.MM.yyyy HH:mm',
-        displayFormats: {
-          day: 'dd.MM.'
-        }
+        displayFormats: { day: 'dd.MM.' }
       },
-      ticks: {
-        color: textColor
-      }
+      ticks: { color: textColor }
     },
     y: {
       beginAtZero: true,
-      title: {
-        display: true,
-        text: props.unitShort
-      },
-      ticks: {
-        color: textColor
-      }
+      title: { display: true, text: props.unitShort },
+      ticks: { color: textColor }
     }
   },
   locale: 'de'
-}))
+};
 </script>
 
 <template>
