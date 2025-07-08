@@ -1,12 +1,6 @@
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": [
-        "sqs:SendMessage"
-      ],
-      "Resource": "arn:aws:sqs:eu-central-1:717279707507:esp32-command-queue"
-    }
-  ]
-}
+[
+  {
+    "Action": [],
+    "Resource": []
+  }
+]
