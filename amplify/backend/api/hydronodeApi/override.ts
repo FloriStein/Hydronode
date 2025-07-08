@@ -1,7 +1,7 @@
 import { AmplifyApiRestResourceStackTemplate } from '@aws-amplify/cli-extensibility-helper'
 
 export function override(resources: AmplifyApiRestResourceStackTemplate) {
-    const authResourceName = 'hydronode68beade5'
+    const authResourceName = 'hydronode6372a89c'
     const userPoolArnParameter = 'AuthCognitoUserPoolArn'
 
     // 1. Dynamischer Parameter für den Cognito User Pool ARN
