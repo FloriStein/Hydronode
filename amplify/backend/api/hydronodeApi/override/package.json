@@ -1,0 +1,15 @@
+{
+  "name": "override",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-amplify/cli-extensibility-helper": "^3.0.39"
+  }
+}
