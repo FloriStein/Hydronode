@@ -10,16 +10,6 @@
           "create"
         ]
       }
-    },
-    "/admin/users/{username}": {
-      "name": "/admin/users/{username}",
-      "lambdaFunction": "hydronodeAdminUserManager",
-      "permissions": {
-        "setting": "private",
-        "auth": [
-          "create"
-        ]
-      }
     }
   }
 }
