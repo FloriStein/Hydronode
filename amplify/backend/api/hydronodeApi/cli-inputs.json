@@ -30,6 +30,186 @@
           "create"
         ]
       }
+    },
+    "/admin/meta": {
+      "name": "/admin/meta",
+      "lambdaFunction": "hydronodeMetaHandlerFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/admin/meta/{ressource-type}": {
+      "name": "/admin/meta/{ressource-type}",
+      "lambdaFunction": "hydronodeCreateRessourceFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/admin/meta/{ressource-type}/{ressource-id}": {
+      "name": "/admin/meta/{ressource-type}/{ressource-id}",
+      "lambdaFunction": "hydronodeCreateRessourceFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/admin/meta/create": {
+      "name": "/admin/meta/create",
+      "lambdaFunction": "hydronodeCreateRessourceFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/meta": {
+      "name": "/meta",
+      "lambdaFunction": "hydronodeMetaHandlerFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/meta/app/timeframe": {
+      "name": "/meta/app/timeframe",
+      "lambdaFunction": "hydronodeGetTimeframesFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/meta/schema": {
+      "name": "/meta/schema",
+      "lambdaFunction": "hydronodeSchemaFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/meta/sensor/all": {
+      "name": "/meta/sensor/all",
+      "lambdaFunction": "hydronodeGetAllMetadataFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/meta/station/all": {
+      "name": "/meta/station/all",
+      "lambdaFunction": "hydronodeGetAllMetadataFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/meta/vessel/all": {
+      "name": "/meta/vessel/all",
+      "lambdaFunction": "hydronodeGetAllMetadataFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/meta/vessel": {
+      "name": "/meta/vessel",
+      "lambdaFunction": "hydronodeMetaHandlerFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/meta/vms": {
+      "name": "/meta/vms",
+      "lambdaFunction": "hydronodeGetDropdownFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/user/subscription": {
+      "name": "/user/subscription",
+      "lambdaFunction": "hydronodeUserSubscriptionFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/data/aggregate": {
+      "name": "/data/aggregate",
+      "lambdaFunction": "hydronodeGetAggFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/data/now": {
+      "name": "/data/now",
+      "lambdaFunction": "hydronodeGetCurrentFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/admin/sensor/{id}": {
+      "name": "/admin/sensor/{id}",
+      "lambdaFunction": "hydronodeMetaHandlerFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/admin/station/{id}": {
+      "name": "/admin/station/{id}",
+      "lambdaFunction": "hydronodeMetaHandlerFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/admin/vessel/{vessel-location}": {
+      "name": "/admin/vessel/{vessel-location}",
+      "lambdaFunction": "hydronodeMetaHandlerFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
     }
   }
 }

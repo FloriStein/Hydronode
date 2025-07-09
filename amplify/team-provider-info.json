@@ -14,11 +14,60 @@
     },
     "categories": {
       "function": {
-        "hydronodeAdminUserManager": {},
-        "hydronodeSendCommandFunction": {}
+        "hydronodeAdminUserManager": {
+          "deploymentBucketName": "amplify-hydronode-dev-46485-deployment",
+          "s3Key": "amplify-builds/hydronodeAdminUserManager-316a43794c4942507163-build.zip"
+        },
+        "hydronodeSendCommandFunction": {
+          "deploymentBucketName": "amplify-hydronode-dev-46485-deployment",
+          "s3Key": "amplify-builds/hydronodeSendCommandFunction-734e44306c3162464a73-build.zip"
+        },
+        "hydronodeMetaHandlerFunction": {
+          "deploymentBucketName": "amplify-hydronode-dev-46485-deployment",
+          "s3Key": "amplify-builds/hydronodeMetaHandlerFunction-396c5142627a71575649-build.zip"
+        },
+        "hydronodeCreateRessourceFunction": {
+          "deploymentBucketName": "amplify-hydronode-dev-46485-deployment",
+          "s3Key": "amplify-builds/hydronodeCreateRessourceFunction-2b4f433779584b674352-build.zip"
+        },
+        "hydronodeGetTimeframesFunction": {
+          "deploymentBucketName": "amplify-hydronode-dev-46485-deployment",
+          "s3Key": "amplify-builds/hydronodeGetTimeframesFunction-6a625238796c632b3531-build.zip"
+        },
+        "hydronodeSchemaFunction": {
+          "deploymentBucketName": "amplify-hydronode-dev-46485-deployment",
+          "s3Key": "amplify-builds/hydronodeSchemaFunction-4466544b646766506146-build.zip"
+        },
+        "hydronodeGetAllMetadataFunction": {
+          "deploymentBucketName": "amplify-hydronode-dev-46485-deployment",
+          "s3Key": "amplify-builds/hydronodeGetAllMetadataFunction-34796964315a6c37792f-build.zip"
+        },
+        "hydronodeGetDropdownFunction": {
+          "deploymentBucketName": "amplify-hydronode-dev-46485-deployment",
+          "s3Key": "amplify-builds/hydronodeGetDropdownFunction-456a3639756a31326652-build.zip"
+        },
+        "hydronodeUserSubscriptionFunction": {
+          "deploymentBucketName": "amplify-hydronode-dev-46485-deployment",
+          "s3Key": "amplify-builds/hydronodeUserSubscriptionFunction-52524d72686868473374-build.zip"
+        },
+        "hydronodeGetAggFunction": {
+          "deploymentBucketName": "amplify-hydronode-dev-46485-deployment",
+          "s3Key": "amplify-builds/hydronodeGetAggFunction-47416e4769474868527a-build.zip"
+        },
+        "hydronodeGetCurrentFunction": {
+          "deploymentBucketName": "amplify-hydronode-dev-46485-deployment",
+          "s3Key": "amplify-builds/hydronodeGetCurrentFunction-53784e4b364b4d50546b-build.zip"
+        },
+        "hydronodeUserManager": {
+          "deploymentBucketName": "amplify-hydronode-dev-46485-deployment",
+          "s3Key": "amplify-builds/hydronodeUserManager-6d2f70673135352f5456-build.zip"
+        }
       },
       "auth": {
         "hydronode6372a89c": {}
+      },
+      "api": {
+        "hydronodeApi": {}
       }
     }
   }

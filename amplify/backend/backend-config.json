@@ -17,6 +17,78 @@
           ],
           "category": "function",
           "resourceName": "hydronodeSendCommandFunction"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "hydronodeMetaHandlerFunction"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "hydronodeCreateRessourceFunction"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "hydronodeGetTimeframesFunction"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "hydronodeSchemaFunction"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "hydronodeGetAllMetadataFunction"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "hydronodeGetDropdownFunction"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "hydronodeUserSubscriptionFunction"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "hydronodeGetAggFunction"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "hydronodeGetCurrentFunction"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -57,10 +129,254 @@
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     },
+    "hydronodeCreateRessourceFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "hydronodeGetAggFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "hydronodeGetAllMetadataFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "hydronodeGetCurrentFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "hydronodeGetDropdownFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "hydronodeGetTimeframesFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "hydronodeMetaHandlerFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "hydronodeSchemaFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
     "hydronodeSendCommandFunction": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "hydronodeUserManager": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "hydronodeUserSubscriptionFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_hydronodeAdminUserManager_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeAdminUserManager"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeAdminUserManager_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeAdminUserManager"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeCreateRessourceFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeCreateRessourceFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeCreateRessourceFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeCreateRessourceFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeGetAggFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeGetAggFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeGetAggFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeGetAggFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeGetAllMetadataFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeGetAllMetadataFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeGetAllMetadataFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeGetAllMetadataFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeGetCurrentFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeGetCurrentFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeGetCurrentFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeGetCurrentFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeGetDropdownFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeGetDropdownFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeGetDropdownFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeGetDropdownFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeGetTimeframesFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeGetTimeframesFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeGetTimeframesFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeGetTimeframesFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeMetaHandlerFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeMetaHandlerFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeMetaHandlerFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeMetaHandlerFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeSchemaFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeSchemaFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeSchemaFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeSchemaFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeSendCommandFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeSendCommandFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeSendCommandFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeSendCommandFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeUserManager_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeUserManager"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeUserManager_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeUserManager"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeUserSubscriptionFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeUserSubscriptionFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_hydronodeUserSubscriptionFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hydronodeUserSubscriptionFunction"
+        }
+      ]
     }
   }
 }
