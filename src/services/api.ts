@@ -4,7 +4,7 @@ import type { InputSchema, MetaData, SensorData } from '../models';
 
 var dataApiUrl = '';
 if(true)
-    dataApiUrl = 'https://pg3p6kb87j.execute-api.eu-central-1.amazonaws.com';
+    dataApiUrl = 'https://pg3p6kb87j.execute-api.eu-central-1.amazonaws.com/dev';
 else
     dataApiUrl = 'http://localhost:51234/test';
 

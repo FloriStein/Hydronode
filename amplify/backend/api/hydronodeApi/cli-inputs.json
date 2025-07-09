@@ -180,6 +180,45 @@
           "create"
         ]
       }
+    },
+    "/admin/meta/sensor/{id}": {
+      "name": "/admin/meta/sensor/{id}",
+      "lambdaFunction": "hydronodeMetaHandlerFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    },
+    "/admin/meta/station/{id}": {
+      "name": "/admin/meta/station/{id}",
+      "lambdaFunction": "hydronodeMetaHandlerFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    },
+    "/admin/meta/vessel/{vessel-location}": {
+      "name": "/admin/meta/vessel/{vessel-location}",
+      "lambdaFunction": "hydronodeMetaHandlerFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
     }
   }
 }
