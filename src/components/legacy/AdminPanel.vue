@@ -6,7 +6,7 @@ import { fetchAuthSession } from 'aws-amplify/auth'
 const users = ref([])
 const loading = ref(true)
 const newUserEmail = ref('')
-const apiUrl = 'https://fxxok2wf3d.execute-api.eu-central-1.amazonaws.com/dev/admin/users'
+const apiUrl = 'https://pg3p6kb87j.execute-api.eu-central-1.amazonaws.com/dev/admin/users'
 
 const fetchUsers = async () => {
   loading.value = true

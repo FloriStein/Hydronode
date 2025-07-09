@@ -7,7 +7,7 @@ const subscribed = ref(false)
 const loading = ref(false)
 const error = ref(null)
 
-const apiUrl = 'https://fxxok2wf3d.execute-api.eu-central-1.amazonaws.com/dev/user/subscription'
+const apiUrl = 'https://pg3p6kb87j.execute-api.eu-central-1.amazonaws.com/dev/user/subscription'
 
 const updateSubscription = async (action) => {
   loading.value = true

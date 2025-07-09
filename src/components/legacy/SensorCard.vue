@@ -65,7 +65,7 @@ let chartIntervalId = null
 
 // Authentifizierungs-Token
 const idToken = ref(null)
-const dataApiUrl = 'https://fxxok2wf3d.execute-api.eu-central-1.amazonaws.com/dev'
+const dataApiUrl = 'https://pg3p6kb87j.execute-api.eu-central-1.amazonaws.com/dev'
 
 // Hole Liste der verfügbaren Schiffe und Timeframes
 const fetchVessels = async () => {

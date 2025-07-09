@@ -10,7 +10,7 @@ const loading = ref(false)
 const error = ref('')
 const success = ref('')
 
-const apiUrl = 'https://fxxok2wf3d.execute-api.eu-central-1.amazonaws.com/dev'
+const apiUrl = 'https://pg3p6kb87j.execute-api.eu-central-1.amazonaws.com/dev'
 
 const getAuthToken = async () => {
   console.log('🔐 Token wird angefordert …')

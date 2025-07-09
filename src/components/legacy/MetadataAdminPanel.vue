@@ -4,7 +4,7 @@ import axios from 'axios'
 import { fetchAuthSession } from 'aws-amplify/auth'
 
 // Basis-URL der API für Metadaten-Endpunkte
-const apiBaseUrl = 'https://fxxok2wf3d.execute-api.eu-central-1.amazonaws.com/dev/admin/meta'
+const apiBaseUrl = 'https://pg3p6kb87j.execute-api.eu-central-1.amazonaws.com/dev/admin/meta'
 
 // ID-Token für die Authentifizierung mit AWS Cognito
 const idToken = ref(null)

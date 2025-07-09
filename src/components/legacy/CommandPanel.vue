@@ -16,7 +16,7 @@ let subscription                 // Referenz zum MQTT-Abonnement
 const topicResponse = 'sqscommand'
 
 // URL für die REST-API, an die der Befehl gesendet wird
-const apiUrl = 'https://fxxok2wf3d.execute-api.eu-central-1.amazonaws.com/dev/admin/command'
+const apiUrl = 'https://pg3p6kb87j.execute-api.eu-central-1.amazonaws.com/dev/admin/command'
 
 // Einrichtung des MQTT-Clients (WebSocket zu AWS IoT)
 const pubsub = new PubSub({
