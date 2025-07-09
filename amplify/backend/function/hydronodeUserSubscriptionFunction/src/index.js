@@ -20,7 +20,6 @@ exports.handler = async (event) => {
         if (httpMethod === 'PUT' && path === '/user/subscription') {
             const subs = await snsClient.send(new ListSubscriptionsByTopicCommand({ TopicArn: SNS_TOPIC_ARN }))
             const alreadySubscribed = subs.Subscriptions.find(sub => sub.Endpoint === email)
-            am
             if (alreadySubscribed) {
                 return respond(409, { message: 'Bereits abonniert' })
             }
