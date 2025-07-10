@@ -16,7 +16,7 @@
       "function": {
         "hydronodeAdminUserManager": {
           "deploymentBucketName": "amplify-hydronode-dev-46485-deployment",
-          "s3Key": "amplify-builds/hydronodeAdminUserManager-316a43794c4942507163-build.zip"
+          "s3Key": "amplify-builds/hydronodeAdminUserManager-7a6e4a2b472b596e3659-build.zip"
         },
         "hydronodeSendCommandFunction": {
           "deploymentBucketName": "amplify-hydronode-dev-46485-deployment",
