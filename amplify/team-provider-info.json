@@ -24,7 +24,7 @@
         },
         "hydronodeMetaHandlerFunction": {
           "deploymentBucketName": "amplify-hydronode-dev-46485-deployment",
-          "s3Key": "amplify-builds/hydronodeMetaHandlerFunction-396c5142627a71575649-build.zip"
+          "s3Key": "amplify-builds/hydronodeMetaHandlerFunction-702f65514b5852783838-build.zip"
         },
         "hydronodeCreateRessourceFunction": {
           "deploymentBucketName": "amplify-hydronode-dev-46485-deployment",

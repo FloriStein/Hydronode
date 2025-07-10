@@ -1,16 +1,6 @@
 {
   "version": 1,
   "paths": {
-    "/admin/users": {
-      "name": "/admin/users",
-      "lambdaFunction": "hydronodeAdminUserManager",
-      "permissions": {
-        "setting": "private",
-        "auth": [
-          "create"
-        ]
-      }
-    },
     "/admin/users/{username}": {
       "name": "/admin/users/{username}",
       "lambdaFunction": "hydronodeAdminUserManager",
@@ -210,6 +200,19 @@
     "/admin/meta/vessel/{vessel-location}": {
       "name": "/admin/meta/vessel/{vessel-location}",
       "lambdaFunction": "hydronodeMetaHandlerFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    },
+    "/admin/users": {
+      "name": "/admin/users",
+      "lambdaFunction": "hydronodeAdminUserManager",
       "permissions": {
         "setting": "private",
         "auth": [

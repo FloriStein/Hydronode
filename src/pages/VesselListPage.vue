@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import { computed } from "vue";
-import { useStore } from "../services/store";
+    import { useStore } from "../services/store";
     import GenericListPage from './GenericListPage.vue';
     import { useRouter } from 'vue-router';
 
