@@ -3,10 +3,10 @@
 
 const awsmobile = {
     "aws_project_region": "eu-central-1",
-    "aws_cognito_identity_pool_id": "eu-central-1:2ecfe89f-8b67-4a9c-ace4-ed0c980c5a5b",
+    "aws_cognito_identity_pool_id": "eu-central-1:89d21ab6-752c-4d74-96cd-491d5ba50d02",
     "aws_cognito_region": "eu-central-1",
-    "aws_user_pools_id": "eu-central-1_Z6HHqowdJ",
-    "aws_user_pools_web_client_id": "1fls39a1i2461hjmmfc9l2tqjm",
+    "aws_user_pools_id": "eu-central-1_4WflHc8Ea",
+    "aws_user_pools_web_client_id": "4mlnoj9nj6707c2mffsej3kojq",
     "oauth": {},
     "aws_cognito_username_attributes": [
         "EMAIL"
@@ -21,18 +21,25 @@ const awsmobile = {
     ],
     "aws_cognito_password_protection_settings": {
         "passwordPolicyMinLength": 8,
-        "passwordPolicyCharacters": []
+        "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_UPPERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS"
+        ]
     },
     "aws_cognito_verification_mechanisms": [
         "EMAIL"
     ],
     "aws_cloud_logic_custom": [
         {
-            "name": "hydronodeApi",
-            "endpoint": "https://pg3p6kb87j.execute-api.eu-central-1.amazonaws.com/dev",
+            "name": "timestreamaccessapi",
+            "endpoint": "https://fxxok2wf3d.execute-api.eu-central-1.amazonaws.com/dev",
             "region": "eu-central-1"
         }
-    ]
+    ],
+    "aws_user_files_s3_bucket": "s3sensordatabucket41ff7-dev",
+    "aws_user_files_s3_bucket_region": "eu-central-1"
 };
 
 

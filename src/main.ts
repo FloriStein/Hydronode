@@ -4,10 +4,9 @@ import router from "./services/router"
 import App from './App.vue';
 import { createPinia } from 'pinia'
 
-import { Amplify } from 'aws-amplify';
-import amplifyConfig from './aws-exports';
-
-Amplify.configure(amplifyConfig);
+/*import { Amplify } from 'aws-amplify';
+/import amplifyConfig from './aws-exports';
+Amplify.configure(amplifyConfig);*/
 
 createApp(App).use(createPinia()).use(router).mount('#app');
 
